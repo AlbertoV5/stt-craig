@@ -7,3 +7,12 @@
 [submodule "whisper"]
 	path = whisper
 	url = git@github.com:AlbertoV5/whisper.git
+[submodule "etl"]
+	path = etl
+	url = git@github.com:AlbertoV5/stt-craig-etl.git
+[submodule "viz"]
+	path = viz
+	url = git@github.com:AlbertoV5/stt-craig-viz.git
+[submodule "spa"]
+	path = spa
+	url = git@github.com:AlbertoV5/stt-craig-spa.git
