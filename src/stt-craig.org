@@ -4,7 +4,7 @@
 #+SETUPFILE: ../config/org-theme.config
 #+SETUPFILE: ../config/org-header.config
 
-* Introduction
+* Introduction and Expectations
 
 In this project we will use =whisper=, then new speech to text A.I. model, for transcribing unscripted dialog from The Late Late Show TV program. We will document and log the entire process for future visit. The outcome will be a SPA for data visualization using Plotly, React, Bootstrap and a Flask back-end with a PostreSQL database.
 
