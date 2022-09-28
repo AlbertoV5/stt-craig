@@ -5,10 +5,13 @@
 #+SETUPFILE: ../config/org-header.config
 
 * Introduction and Expectations
+:PROPERTIES:
+:CUSTOM_ID: introduction-and-expectations
+:END:
 
-In this project we will use =whisper=, then new speech to text A.I. model, for transcribing unscripted dialog from The Late Late Show TV program. We will document and log the entire process for future visit. The outcome will be a SPA for data visualization using Plotly, React, Bootstrap and a Flask back-end with a PostreSQL database.
+In this project we will use =whisper=[fn:1], then new speech to text A.I. model, for transcribing unscripted dialog from The Late Late Show TV program. We will document and log the entire process for future visit. The outcome will be a SPA for data visualization using Plotly, React, Bootstrap and a Flask back-end with a PostreSQL database.
 
-The data analysis will be performed in Python using a mix of scripts and Jupyter notebooks. The analysis may require addition of other A.I. submodules like =resemblyze= in order to distinguish speakers in a conversation or any other solutions that arise to any given problems.
+The data analysis will be performed in Python using a mix of scripts and Jupyter notebooks. The analysis may require addition of other A.I. submodules like =resemblyze=[fn:2] in order to distinguish speakers in a conversation or any other solutions that arise to any given problems.
 
 The process will be iterative over a few collections of videos:
 
@@ -26,3 +29,10 @@ Once the process is done a few times, the whole collection of collections may be
 Once the SPA is completed, it will be uploaded to a PVM or container in AWS or any other cloud provider. Then the page will be shared to the public.
 
 Disclaimer: None of the data or results from the analysis will be used for monetary gains as I do not own the copyright to the original material. It is purely for educational purposes and I will absorb all cloud services expenses without asking for donations for this specific project.
+
+* Footnotes
+:PROPERTIES:
+:CUSTOM_ID: footnotes
+:END:
+[fn:2]https://github.com/resemble-ai/Resemblyzer
+[fn:1]https://github.com/openai/whisper

@@ -13,10 +13,10 @@ STATIC = $(PUBLIC)/resources
 THEME = $(RESOURCES)/theme
 THEME_PUB = $(STATIC)/theme
 # Specific directories for commands to run after publishing.
-INDEX = $(PUBLIC)/index.html
+INDEX = index.html
 README = README.md
 # Project name based
-INDEX_TARGET = build/$(PROJECT_NAME).html
+INDEX_TARGET = public/build/$(PROJECT_NAME).html
 README_DOC = $(DOCS)/$(PROJECT_NAME).md
 # Get the root of the current Emacs server (ideally the project root).
 SERVER_DIR = (with-current-buffer (current-buffer) default-directory)
@@ -58,7 +58,7 @@ $(README): $(README_DOC)
 	@cp $< $@
 	$(DONE)
 
-$(INDEX): $(CONFIG)/index.py $(PUBLIC)/$(INDEX_TARGET)
+$(INDEX): $(CONFIG)/index.py $(INDEX_TARGET)
 	$(info    Building Index (redirecting to $(INDEX_TARGET))...)
 	@python $< $(INDEX_TARGET) $@
 	$(DONE)
