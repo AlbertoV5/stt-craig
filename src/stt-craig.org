@@ -30,6 +30,16 @@ Once the SPA is completed, it will be uploaded to a PVM or container in AWS or a
 
 Disclaimer: None of the data or results from the analysis will be used for monetary gains as I do not own the copyright to the original material. It is purely for educational purposes and I will absorb all cloud services expenses without asking for donations for this specific project.
 
+* Resources
+
+We have three projects that will happen under different repositories.
+
+1. Extract audio data from video and convert it to text data. Features and visualization of such features.
+2. Process and analyse the text data. Visualize the statistics from the text data, zero audio info.
+3. Create a web app for sharing the results and deploy it to the cloud.
+
+
+
 * Footnotes
 :PROPERTIES:
 :CUSTOM_ID: footnotes
