@@ -52,11 +52,7 @@ We will use the same html template for each submodule.
 pip install org-template-builder
 #+end_src
 
-Our first repo will be =etl=.
-
-#+begin_src shell :eval no
-mkdir etl
-#+end_src
+Then we'll create our directories and move into them to start the template.
 
 #+begin_src shell :dir ../etl :eval no
 python -m orgtemp etl --author "Alberto Valdez" && git rm resources/theme -f
@@ -68,24 +64,26 @@ git add . && git commit -m "initial commit"
 
 We will repeat this process with the rest of the submodules once the first one is completed.
 
-** ETL submodule
+** ETL
 :PROPERTIES:
-:CUSTOM_ID: etl-submodule
+:CUSTOM_ID: etl
 :END:
 
 See the details of the ETL process in its own repository [[../etl/src/etl.org][here]].
 
-** Visualization submodule
+** Data Viz
 :PROPERTIES:
-:CUSTOM_ID: analytics-submodule
+:CUSTOM_ID: data-viz
 :END:
 
 See the details of the Visualization and Analytics process in its own repository [[../viz/src/viz.org][here]].
 
-** SPA submodule
+** SPA
+:PROPERTIES:
+:CUSTOM_ID: spa
+:END:
 
 See the details of the Single Page Application in its own repository [[../spa/src/spa.org][here]].
-
 
 
 * Footnotes

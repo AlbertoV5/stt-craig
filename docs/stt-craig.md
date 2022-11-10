@@ -21,6 +21,51 @@ Once the SPA is completed, it will be uploaded to a PVM or container in AWS or a
 
 Disclaimer: None of the data or results from the analysis will be used for monetary gains as I do not own the copyright to the original material. It is purely for educational purposes and I will absorb all cloud services expenses without asking for donations for this specific project.
 
+
+# Resources
+
+
+## Submodules
+
+We have 3 projects that will happen under different repositories.
+
+1.  Extract audio data from video and convert it to text data. Features and visualization of such features.
+2.  Process and analyse the text data. Visualize the statistics from the text data, zero audio info.
+3.  Create a web app for sharing the results and deploy it to the cloud.
+
+We will use the same html template for each submodule.
+
+```shell
+pip install org-template-builder
+```
+
+Then we&rsquo;ll create our directories and move into them to start the template.
+
+```shell
+python -m orgtemp etl --author "Alberto Valdez" && git rm resources/theme -f
+```
+
+```shell
+git add . && git commit -m "initial commit"
+```
+
+We will repeat this process with the rest of the submodules once the first one is completed.
+
+
+## ETL
+
+See the details of the ETL process in its own repository [here](../etl/src/etl.md).
+
+
+## Data Viz
+
+See the details of the Visualization and Analytics process in its own repository [here](../viz/src/viz.md).
+
+
+## SPA
+
+See the details of the Single Page Application in its own repository [here](../spa/src/spa.md).
+
 ## Footnotes
 
 <sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <https://github.com/openai/whisper>

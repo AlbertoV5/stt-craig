@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-09-28 Wed 14:07 -->
+<!-- 2022-09-28 Wed 18:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Speech To Text - Craig</title>
@@ -32,6 +32,14 @@
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#introduction-and-expectations">1. Introduction and Expectations</a></li>
+<li><a href="#resources">2. Resources</a>
+<ul>
+<li><a href="#submodules">2.1. Submodules</a></li>
+<li><a href="#etl">2.2. ETL</a></li>
+<li><a href="#data-viz">2.3. Data Viz</a></li>
+<li><a href="#spa">2.4. SPA</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -75,6 +83,99 @@ Disclaimer: None of the data or results from the analysis will be used for monet
 </p>
 </div>
 </div>
+
+<div id="outline-container-resources" class="outline-2">
+<h2 id="resources"><span class="section-number-2">2.</span> Resources</h2>
+<div class="outline-text-2" id="text-resources">
+</div>
+
+<div id="outline-container-submodules" class="outline-3">
+<h3 id="submodules"><span class="section-number-3">2.1.</span> Submodules</h3>
+<div class="outline-text-3" id="text-submodules">
+<p>
+We have 3 projects that will happen under different repositories.
+</p>
+
+<ol class="org-ol">
+<li>Extract audio data from video and convert it to text data. Features and visualization of such features.</li>
+<li>Process and analyse the text data. Visualize the statistics from the text data, zero audio info.</li>
+<li>Create a web app for sharing the results and deploy it to the cloud.</li>
+</ol>
+
+<p>
+We will use the same html template for each submodule.
+</p>
+
+<div class="src-name" id="org0ba044c">
+<p>
+
+</p>
+
+</div>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #ded492;">pip</span> install org-template-builder
+</pre>
+</div>
+
+<p>
+Then we&rsquo;ll create our directories and move into them to start the template.
+</p>
+
+<div class="src-name" id="orgf846e4a">
+<p>
+
+</p>
+
+</div>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #ded492;">python</span> <span style="color: #e0e0e0;">-m</span> orgtemp etl <span style="color: #e0e0e0;">--author</span> <span style="color: #CE9178;">"Alberto Valdez"</span> <span style="color: #e0e0e0;">&amp;&amp;</span> <span style="color: #ded492;">git</span> <span style="color: #35CDAF;">rm</span> resources/theme <span style="color: #e0e0e0;">-f</span>
+</pre>
+</div>
+
+<div class="src-name" id="orgbe8d619">
+<p>
+
+</p>
+
+</div>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #ded492;">git</span> add . <span style="color: #e0e0e0;">&amp;&amp;</span> <span style="color: #ded492;">git</span> commit <span style="color: #e0e0e0;">-m</span> <span style="color: #CE9178;">"initial commit"</span>
+</pre>
+</div>
+
+<p>
+We will repeat this process with the rest of the submodules once the first one is completed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-etl" class="outline-3">
+<h3 id="etl"><span class="section-number-3">2.2.</span> ETL</h3>
+<div class="outline-text-3" id="text-etl">
+<p>
+See the details of the ETL process in its own repository <a href="../etl/src/etl.html">here</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-data-viz" class="outline-3">
+<h3 id="data-viz"><span class="section-number-3">2.3.</span> Data Viz</h3>
+<div class="outline-text-3" id="text-data-viz">
+<p>
+See the details of the Visualization and Analytics process in its own repository <a href="../viz/src/viz.html">here</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-spa" class="outline-3">
+<h3 id="spa"><span class="section-number-3">2.4.</span> SPA</h3>
+<div class="outline-text-3" id="text-spa">
+<p>
+See the details of the Single Page Application in its own repository <a href="../spa/src/spa.html">here</a>.
+</p>
+</div>
+</div>
+</div>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
@@ -92,7 +193,7 @@ Disclaimer: None of the data or results from the analysis will be used for monet
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Alberto Valdez</p>
-<p class="date">Created: 2022-09-28 Wed 14:07</p>
+<p class="date">Created: 2022-09-28 Wed 18:01</p>
 </div>
 </body>
 </html>
